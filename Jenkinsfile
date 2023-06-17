@@ -17,10 +17,10 @@ pipeline {
     	 agent any
       steps {
       	sh ''' mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=sonarqube \
-  -Dsonar.projectName='sonarqube' \
+  -Dsonar.projectKey=Build \
+  -Dsonar.projectName='Build' \
   -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.token=sqp_122d850e48ab396bba7ce71b4801ea42bdfba9c2
+  -Dsonar.token=sqp_dae5d410c3cddfe3bb0e4a873b3a0b981c4adaa0
 '''
       }
     }
